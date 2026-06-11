@@ -1,0 +1,87 @@
+/* ── ImageThumbnail ── */
+
+.thumbnails-strip {
+  display: flex;
+  gap: 4px;
+  overflow-x: auto;
+  padding: 4px 4px 8px;
+  scroll-behavior: smooth;
+  scrollbar-width: thin;
+  scrollbar-color: rgba(94, 201, 38, 0.4) rgba(11, 17, 32, 0.5);
+}
+
+/* Prevent listitem wrappers from growing when there are few images */
+.thumbnails-strip>[role="listitem"] {
+  flex: 0 0 auto;
+}
+
+/* Webkit scrollbar customizations */
+.thumbnails-strip::-webkit-scrollbar {
+  height: 6px;
+}
+
+.thumbnails-strip::-webkit-scrollbar-track {
+  background: rgba(11, 17, 32, 0.5);
+  border-radius: 3px;
+}
+
+.thumbnails-strip::-webkit-scrollbar-thumb {
+  background: rgba(94, 201, 38, 0.3);
+  border-radius: 3px;
+  transition: background 0.2s;
+}
+
+.thumbnails-strip::-webkit-scrollbar-thumb:hover {
+  background: var(--green-bright);
+}
+
+.thumbnail-btn {
+  width: 140px;
+  aspect-ratio: 3 / 2;
+  background: #050810;
+  border: 2px solid transparent;
+  padding: 0;
+  cursor: pointer;
+  overflow: hidden;
+  display: block;
+  transition: border-color var(--gallery-transition), transform var(--gallery-transition);
+}
+
+.thumbnail-btn:hover {
+  border-color: rgba(94, 201, 38, 0.5);
+  transform: translateY(-2px);
+}
+
+.thumbnail-btn--active {
+  border-color: var(--green-bright);
+  box-shadow: 0 0 10px rgba(94, 201, 38, 0.3);
+}
+
+.thumbnail-btn:focus-visible {
+  outline: 2px solid var(--green-bright);
+  outline-offset: 2px;
+}
+
+.thumbnail-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  /* Rule: Use object-fit: cover for thumbnails */
+  display: block;
+  transition: opacity 0.2s;
+}
+
+.thumbnail-btn:not(.thumbnail-btn--active) .thumbnail-img {
+  opacity: 0.7;
+}
+
+.thumbnail-btn:hover .thumbnail-img {
+  opacity: 1;
+}
+
+/* ── Responsive ── */
+@media (max-width: 600px) {
+  .thumbnail-btn {
+    width: 66px;
+  }
+}

@@ -1,0 +1,44 @@
+/* ── PhaseSelector ── */
+
+.phase-selector {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  margin-bottom: 24px;
+}
+
+.phase-tab {
+  font-family: var(--font-primary);
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  background: transparent;
+  color: var(--muted);
+  border: 1px solid rgba(232, 240, 232, 0.18);
+  cursor: pointer;
+  padding: 10px 24px;
+  border-radius: 2px;
+  min-height: 40px;
+  transition: border-color 0.2s, color 0.2s, background 0.2s;
+}
+
+.phase-tab:hover {
+  border-color: var(--green-bright);
+  color: var(--green-bright);
+}
+
+.phase-tab--active {
+  background: linear-gradient(135deg, var(--green-bright), var(--green-dark));
+  color: #fff;
+  border-color: transparent;
+}
+
+.phase-tab--active:hover {
+  color: #fff;
+}
+
+.phase-tab:focus-visible {
+  outline: 2px solid var(--green-bright);
+  outline-offset: 2px;
+}

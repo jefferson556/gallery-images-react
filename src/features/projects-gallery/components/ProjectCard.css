@@ -1,0 +1,120 @@
+/* ── ProjectCard ── */
+/* Adapted from Ecotech .gen-card styles (services.css) */
+
+.gen-card {
+  min-width: 0;
+  background: var(--charcoal);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  border: 1px solid var(--gallery-card-border);
+  border-bottom: 3px solid transparent;
+  border-radius: var(--gallery-radius);
+  transition:
+    border-color var(--gallery-transition),
+    transform var(--gallery-transition),
+    box-shadow var(--gallery-transition),
+    background var(--gallery-transition);
+}
+
+.gen-card:hover {
+  border-bottom-color: var(--green-bright);
+  border-color: var(--gallery-card-border-hover);
+  background: var(--mid);
+  transform: translateY(-4px);
+  box-shadow:
+    0 18px 40px rgba(0, 0, 0, 0.28),
+    0 0 0 1px var(--gallery-glow);
+}
+
+.gen-card-img-wrap {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  overflow: hidden;
+}
+
+.gen-card-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+  transition: transform 0.4s ease;
+}
+
+.gen-card:hover .gen-card-img {
+  transform: scale(1.04);
+}
+
+.gen-card-body {
+  padding: 34px 36px 40px;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.gen-card-title {
+  font-family: var(--font-primary);
+  font-weight: 800;
+  font-size: 24px;
+  letter-spacing: 1.2px;
+  margin-bottom: 14px;
+  line-height: 1.15;
+  color: var(--text);
+}
+
+.gen-card-text {
+  font-size: 15px;
+  line-height: 1.8;
+  margin: 0 0 24px;
+  color: var(--muted);
+  font-weight: 300;
+  flex: 1;
+}
+
+/* ── View Project Button ── */
+.view-project-btn {
+  font-family: var(--font-primary);
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  background: linear-gradient(135deg, var(--green-bright), var(--green-dark));
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  padding: 14px 28px;
+  border-radius: 2px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 48px;
+  transition: transform 0.2s, box-shadow 0.2s;
+  box-shadow: 0 4px 20px rgba(60, 176, 67, 0.3);
+  text-decoration: none;
+  align-self: flex-start;
+}
+
+.view-project-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 28px rgba(60, 176, 67, 0.45);
+}
+
+.view-project-btn:focus-visible {
+  outline: 2px solid var(--green-bright);
+  outline-offset: 2px;
+}
+
+/* ── Responsive ── */
+@media (max-width: 1100px) {
+  .gen-card-body { padding: 28px 26px 30px; }
+  .gen-card-title { font-size: 22px; }
+  .gen-card-text { font-size: 14px; line-height: 1.75; }
+}
+
+@media (max-width: 600px) {
+  .gen-card-body { padding: 20px; }
+  .gen-card-title { font-size: 20px; margin-bottom: 10px; }
+  .gen-card-text { font-size: 14px; line-height: 1.7; }
+  .view-project-btn { font-size: 12px; padding: 12px 18px; min-height: 46px; width: 100%; }
+}

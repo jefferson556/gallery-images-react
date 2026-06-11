@@ -1,0 +1,172 @@
+/* ── ProjectGrid ── */
+/* Responsive 3×2 / 2×n / 1×n grid using CSS Grid (no Bootstrap dependency) */
+
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+  padding: 0;
+}
+
+/* ── Pagination controls ── */
+.pagination {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  margin-top: 40px;
+}
+
+.pagination-btn {
+  font-family: var(--font-primary);
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  background: transparent;
+  color: var(--text);
+  border: 1px solid rgba(232, 240, 232, 0.25);
+  cursor: pointer;
+  padding: 12px 24px;
+  border-radius: 2px;
+  min-height: 44px;
+  transition: border-color 0.2s, color 0.2s, background 0.2s;
+}
+
+.pagination-btn:hover:not(:disabled) {
+  border-color: var(--green-bright);
+  color: var(--green-bright);
+}
+
+.pagination-btn:disabled {
+  opacity: 0.35;
+  cursor: not-allowed;
+}
+
+.pagination-btn:focus-visible {
+  outline: 2px solid var(--green-bright);
+  outline-offset: 2px;
+}
+
+.pagination-info {
+  font-size: 14px;
+  color: var(--muted);
+  letter-spacing: 1px;
+  min-width: 80px;
+  text-align: center;
+}
+
+/* ── Loading state ── */
+.gallery-loading {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 80px 20px;
+  gap: 20px;
+}
+
+.spinner {
+  width: 40px;
+  height: 40px;
+  border: 3px solid rgba(94, 201, 38, 0.15);
+  border-top-color: var(--green-bright);
+  border-radius: 50%;
+  animation: spin 0.8s linear infinite;
+}
+
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
+
+.gallery-loading-text {
+  font-size: 14px;
+  color: var(--muted);
+  letter-spacing: 1px;
+}
+
+/* ── Error state ── */
+.gallery-error {
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.gallery-error-title {
+  font-family: var(--font-primary);
+  font-weight: 800;
+  font-size: 24px;
+  color: var(--text);
+  margin-bottom: 12px;
+}
+
+.gallery-error-msg {
+  font-size: 15px;
+  color: var(--muted);
+  margin-bottom: 24px;
+}
+
+.gallery-retry-btn {
+  font-family: var(--font-primary);
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  background: linear-gradient(135deg, var(--green-bright), var(--green-dark));
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  padding: 14px 28px;
+  border-radius: 2px;
+  min-height: 48px;
+  transition: transform 0.2s, box-shadow 0.2s;
+  box-shadow: 0 4px 20px rgba(60, 176, 67, 0.3);
+}
+
+.gallery-retry-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 28px rgba(60, 176, 67, 0.45);
+}
+
+.gallery-retry-btn:focus-visible {
+  outline: 2px solid var(--green-bright);
+  outline-offset: 2px;
+}
+
+/* ── Empty state ── */
+.gallery-empty {
+  text-align: center;
+  padding: 80px 20px;
+}
+
+.gallery-empty-title {
+  font-family: var(--font-primary);
+  font-weight: 800;
+  font-size: 24px;
+  color: var(--text);
+  margin-bottom: 12px;
+}
+
+.gallery-empty-msg {
+  font-size: 15px;
+  color: var(--muted);
+}
+
+/* ── Responsive ── */
+@media (max-width: 991px) {
+  .project-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+}
+
+@media (max-width: 600px) {
+  .project-grid {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+  .pagination-btn { font-size: 12px; padding: 10px 16px; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .spinner { animation: none; }
+}

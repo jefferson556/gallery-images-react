@@ -1,0 +1,475 @@
+{
+  "site": {
+    "title": "Our Projects",
+    "subtitle": "Explore some of our projects and construction processes."
+  },
+  "projects": [
+    {
+      "id": "centro-comercial-plaza-norte",
+      "title": "Plaza Norte Shopping Center",
+      "description": "Construction of a modern shopping center with full electrical infrastructure, lighting systems, and emergency power distribution.",
+      "coverImage": {
+        "src": "/assets/images/projects/plaza-norte/main-images/cover.webp.png",
+        "alt": "Exterior view of Plaza Norte Shopping Center under construction"
+      },
+      "phases": {
+        "before": {
+          "label": "Before",
+          "description": "Initial foundation and site preparation work.",
+          "images": [
+            {
+              "id": "pn-b1",
+              "src": "/assets/images/projects/plaza-norte/before/before-01.png",
+              "alt": "Foundation excavation at Plaza Norte",
+              "order": 1
+            },
+            {
+              "id": "pn-b2",
+              "src": "/assets/images/projects/plaza-norte/before/before-02.png",
+              "alt": "Site survey and initial grading",
+              "order": 2
+            }
+          ]
+        },
+        "during": {
+          "label": "During",
+          "description": "Structural framing and electrical rough-in.",
+          "images": [
+            {
+              "id": "pn-d1",
+              "src": "/assets/images/projects/plaza-norte/during/during-01.png",
+              "alt": "Steel framing installation",
+              "order": 1
+            },
+            {
+              "id": "pn-d2",
+              "src": "/assets/images/projects/plaza-norte/during/during-02.png",
+              "alt": "Electrical conduit installation",
+              "order": 2
+            }
+          ]
+        },
+        "after": {
+          "label": "After",
+          "description": "Completed project with full electrical systems operational.",
+          "images": [
+            {
+              "id": "pn-a1",
+              "src": "/assets/images/projects/plaza-norte/after/after-01.png",
+              "alt": "Finished exterior with LED lighting",
+              "order": 1
+            },
+            {
+              "id": "pn-a2",
+              "src": "/assets/images/projects/plaza-norte/after/after-02.png",
+              "alt": "Night view of completed lighting installation",
+              "order": 2
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "residencial-los-pinos",
+      "title": "Los Pinos Residential Complex",
+      "description": "Complete electrical system installation for a luxury residential complex including smart home integration and backup generators.",
+      "coverImage": {
+        "src": "/assets/images/projects/los-pinos-residential-complex/main-images/cover.png",
+        "alt": "Los Pinos Residential Complex exterior"
+      },
+      "phases": {
+        "before": {
+          "label": "Before",
+          "description": "Pre-construction site assessment.",
+          "images": [
+            {
+              "id": "lp-b1",
+              "src": "/assets/images/projects/los-pinos-residential-complex/before/before-01.png",
+              "alt": "Empty lot before construction",
+              "order": 1
+            },
+            {
+              "id": "lp-b2",
+              "src": "/assets/images/projects/los-pinos-residential-complex/before/before-02.png",
+              "alt": "Site survey markers",
+              "order": 2
+            }
+          ]
+        },
+        "during": {
+          "label": "During",
+          "description": "Residential unit wiring and panel installation.",
+          "images": [
+            {
+              "id": "lp-d1",
+              "src": "/assets/images/projects/los-pinos-residential-complex/during/during-01.png",
+              "alt": "Residential unit rough-in wiring",
+              "order": 1
+            },
+            {
+              "id": "lp-d2",
+              "src": "/assets/images/projects/los-pinos-residential-complex/during/during-02.png",
+              "alt": "Sub-panel installation per unit",
+              "order": 2
+            },
+            {
+              "id": "lp-d3",
+              "src": "/assets/images/projects/los-pinos-residential-complex/during/during-03.png",
+              "alt": "Generator room wiring",
+              "order": 3
+            },
+            {
+              "id": "lp-d4",
+              "src": "/assets/images/projects/los-pinos-residential-complex/during/during-03.png",
+              "alt": "Generator room wiring",
+              "order": 4
+            },
+            {
+              "id": "lp-d5",
+              "src": "/assets/images/projects/los-pinos-residential-complex/during/during-03.png",
+              "alt": "Generator room wiring",
+              "order": 5
+            },
+            {
+              "id": "lp-d6",
+              "src": "/assets/images/projects/los-pinos-residential-complex/during/during-03.png",
+              "alt": "Generator room wiring",
+              "order": 6
+            }
+          ]
+        },
+        "after": {
+          "label": "After",
+          "description": "Finished complex with smart lighting.",
+          "images": [
+            {
+              "id": "lp-a1",
+              "src": "/assets/images/projects/los-pinos-residential-complex/after/after-01.png",
+              "alt": "Completed residential building at night",
+              "order": 1
+            },
+            {
+              "id": "lp-a2",
+              "src": "/assets/images/projects/los-pinos-residential-complex/after/after-02.png",
+              "alt": "Interior smart lighting system",
+              "order": 2
+            },
+            {
+              "id": "lp-a3",
+              "src": "/assets/images/projects/los-pinos-residential-complex/after/after-03.png",
+              "alt": "Landscape lighting at night",
+              "order": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "hospital-central",
+      "title": "Central Hospital Expansion",
+      "description": "Critical power infrastructure upgrade for hospital expansion including redundant emergency power systems and medical-grade wiring.",
+      "coverImage": {
+        "src": "https://images.unsplash.com/photo-1587351021759-3e566b6af7cc?w=600&q=80",
+        "alt": "Central Hospital building exterior"
+      },
+      "phases": {
+        "before": {
+          "label": "Before",
+          "description": "Existing hospital infrastructure assessment.",
+          "images": [
+            {
+              "id": "hc-b1",
+              "src": "https://images.unsplash.com/photo-1538108149393-fbbd81895907?w=800&q=80",
+              "alt": "Existing hospital wing",
+              "order": 1
+            }
+          ]
+        },
+        "during": {
+          "label": "During",
+          "description": "Emergency power system installation.",
+          "images": [
+            {
+              "id": "hc-d1",
+              "src": "https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=800&q=80",
+              "alt": "Generator installation in progress",
+              "order": 1
+            },
+            {
+              "id": "hc-d2",
+              "src": "https://images.unsplash.com/photo-1581094794329-c8112a89af12?w=800&q=80",
+              "alt": "Electrical transfer switch setup",
+              "order": 2
+            }
+          ]
+        },
+        "after": {
+          "label": "After",
+          "description": "Fully operational hospital wing with redundant power.",
+          "images": [
+            {
+              "id": "hc-a1",
+              "src": "https://images.unsplash.com/photo-1587351021759-3e566b6af7cc?w=800&q=80",
+              "alt": "Completed hospital expansion",
+              "order": 1
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "oficinas-torre-sur",
+      "title": "Torre Sur Office Building",
+      "description": "Modern office tower with integrated electrical, data cabling, and energy-efficient LED lighting throughout all 12 floors.",
+      "coverImage": {
+        "src": "https://images.unsplash.com/photo-1554435493-93422e8220c8?w=600&q=80",
+        "alt": "Torre Sur Office Building glass facade"
+      },
+      "phases": {
+        "before": {
+          "label": "Before",
+          "description": "Site clearing and foundation preparation.",
+          "images": [
+            {
+              "id": "ts-b1",
+              "src": "https://images.unsplash.com/photo-1621905252507-b35492cc74b4?w=800&q=80",
+              "alt": "Cleared site ready for construction",
+              "order": 1
+            },
+            {
+              "id": "ts-b2",
+              "src": "https://images.unsplash.com/photo-1590644365607-1c5a5f1b7ad4?w=800&q=80",
+              "alt": "Foundation engineering work",
+              "order": 2
+            }
+          ]
+        },
+        "during": {
+          "label": "During",
+          "description": "Floor-by-floor electrical installation.",
+          "images": [
+            {
+              "id": "ts-d1",
+              "src": "https://images.unsplash.com/photo-1503387762-592deb58ef4e?w=800&q=80",
+              "alt": "Conduit runs per floor",
+              "order": 1
+            },
+            {
+              "id": "ts-d2",
+              "src": "https://images.unsplash.com/photo-1565008447742-97f6f38c985c?w=800&q=80",
+              "alt": "LED lighting installation",
+              "order": 2
+            },
+            {
+              "id": "ts-d3",
+              "src": "https://images.unsplash.com/photo-1567521464027-f127ff144326?w=800&q=80",
+              "alt": "Main distribution panel wiring",
+              "order": 3
+            }
+          ]
+        },
+        "after": {
+          "label": "After",
+          "description": "Operational office building with energy-efficient systems.",
+          "images": [
+            {
+              "id": "ts-a1",
+              "src": "https://images.unsplash.com/photo-1554435493-93422e8220c8?w=800&q=80",
+              "alt": "Tower exterior at dusk with lighting",
+              "order": 1
+            },
+            {
+              "id": "ts-a2",
+              "src": "https://images.unsplash.com/photo-1497366216548-37526070297c?w=800&q=80",
+              "alt": "Modern office interior with LED lighting",
+              "order": 2
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "parque-industrial-delta",
+      "title": "Delta Industrial Park",
+      "description": "High-capacity electrical distribution for industrial warehouses including three-phase power, motor controls, and safety systems.",
+      "coverImage": {
+        "src": "https://images.unsplash.com/photo-1565008447742-97f6f38c985c?w=600&q=80",
+        "alt": "Delta Industrial Park warehouse exterior"
+      },
+      "phases": {
+        "before": {
+          "label": "Before",
+          "description": "Industrial site preparation and utility coordination.",
+          "images": [
+            {
+              "id": "di-b1",
+              "src": "https://images.unsplash.com/photo-1621905252507-b35492cc74b4?w=800&q=80",
+              "alt": "Raw industrial site",
+              "order": 1
+            }
+          ]
+        },
+        "during": {
+          "label": "During",
+          "description": "Three-phase power system installation.",
+          "images": [
+            {
+              "id": "di-d1",
+              "src": "https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=800&q=80",
+              "alt": "High-voltage conduit installation",
+              "order": 1
+            },
+            {
+              "id": "di-d2",
+              "src": "https://images.unsplash.com/photo-1581094794329-c8112a89af12?w=800&q=80",
+              "alt": "Motor control center setup",
+              "order": 2
+            }
+          ]
+        },
+        "after": {
+          "label": "After",
+          "description": "Operational warehouse with full power systems.",
+          "images": [
+            {
+              "id": "di-a1",
+              "src": "https://images.unsplash.com/photo-1565008447742-97f6f38c985c?w=800&q=80",
+              "alt": "Finished warehouse with exterior lighting",
+              "order": 1
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "escuela-san-martin",
+      "title": "San Martin School Renovation",
+      "description": "Complete electrical renovation of a K-12 school, including classroom lighting upgrades, fire alarm systems, and AV wiring.",
+      "coverImage": {
+        "src": "https://images.unsplash.com/photo-1580582932707-520aed937b7b?w=600&q=80",
+        "alt": "San Martin School main building"
+      },
+      "phases": {
+        "before": {
+          "label": "Before",
+          "description": "Existing outdated electrical infrastructure.",
+          "images": [
+            {
+              "id": "sm-b1",
+              "src": "https://images.unsplash.com/photo-1580582932707-520aed937b7b?w=800&q=80",
+              "alt": "Old school building exterior",
+              "order": 1
+            },
+            {
+              "id": "sm-b2",
+              "src": "https://images.unsplash.com/photo-1538108149393-fbbd81895907?w=800&q=80",
+              "alt": "Outdated wiring in classroom",
+              "order": 2
+            }
+          ]
+        },
+        "during": {
+          "label": "During",
+          "description": "Classroom-by-classroom rewiring.",
+          "images": [
+            {
+              "id": "sm-d1",
+              "src": "https://images.unsplash.com/photo-1567521464027-f127ff144326?w=800&q=80",
+              "alt": "New conduit in classroom ceiling",
+              "order": 1
+            },
+            {
+              "id": "sm-d2",
+              "src": "https://images.unsplash.com/photo-1581094794329-c8112a89af12?w=800&q=80",
+              "alt": "Fire alarm system installation",
+              "order": 2
+            },
+            {
+              "id": "sm-d3",
+              "src": "https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=800&q=80",
+              "alt": "AV wiring in auditorium",
+              "order": 3
+            }
+          ]
+        },
+        "after": {
+          "label": "After",
+          "description": "Modernized school with LED lighting and safety systems.",
+          "images": [
+            {
+              "id": "sm-a1",
+              "src": "https://images.unsplash.com/photo-1580582932707-520aed937b7b?w=800&q=80",
+              "alt": "Renovated school exterior",
+              "order": 1
+            },
+            {
+              "id": "sm-a2",
+              "src": "https://images.unsplash.com/photo-1497366216548-37526070297c?w=800&q=80",
+              "alt": "Modern classroom with new lighting",
+              "order": 2
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "condominio-brisas-del-mar",
+      "title": "Brisas del Mar Condominiums",
+      "description": "Luxury beachfront condominium project with underground power distribution, elevator systems, and pool area lighting.",
+      "coverImage": {
+        "src": "https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?w=600&q=80",
+        "alt": "Brisas del Mar Condominiums beachfront view"
+      },
+      "phases": {
+        "before": {
+          "label": "Before",
+          "description": "Beachfront lot preparation.",
+          "images": [
+            {
+              "id": "bm-b1",
+              "src": "https://images.unsplash.com/photo-1621905252507-b35492cc74b4?w=800&q=80",
+              "alt": "Beachfront lot before construction",
+              "order": 1
+            }
+          ]
+        },
+        "during": {
+          "label": "During",
+          "description": "Underground power and elevator electrical systems.",
+          "images": [
+            {
+              "id": "bm-d1",
+              "src": "https://images.unsplash.com/photo-1503387762-592deb58ef4e?w=800&q=80",
+              "alt": "Underground conduit trenching",
+              "order": 1
+            },
+            {
+              "id": "bm-d2",
+              "src": "https://images.unsplash.com/photo-1565008447742-97f6f38c985c?w=800&q=80",
+              "alt": "Elevator motor room wiring",
+              "order": 2
+            }
+          ]
+        },
+        "after": {
+          "label": "After",
+          "description": "Completed luxury condominiums with landscape lighting.",
+          "images": [
+            {
+              "id": "bm-a1",
+              "src": "https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?w=800&q=80",
+              "alt": "Finished condominiums at sunset",
+              "order": 1
+            },
+            {
+              "id": "bm-a2",
+              "src": "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=800&q=80",
+              "alt": "Pool area night lighting",
+              "order": 2
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

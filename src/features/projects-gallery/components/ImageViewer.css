@@ -1,0 +1,128 @@
+/* ── ImageViewer ── */
+
+.image-viewer {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  width: 100%;
+}
+
+.image-viewer-display {
+  position: relative;
+  width: 100%;
+  max-height: 520px;
+  background: #050810;
+  border: 1px solid rgba(232, 240, 232, 0.08);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.viewer-img {
+  max-width: 100%;
+  max-height: 100%;
+  width: auto;
+  height: auto;
+  object-fit: contain; /* Rule: Use object-fit: contain for expanded images */
+  display: block;
+}
+
+/* ── Navigation Buttons ── */
+.viewer-nav-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(11, 17, 32, 0.75);
+  color: #fff;
+  border: 1px solid rgba(232, 240, 232, 0.15);
+  font-family: inherit;
+  font-size: 24px;
+  line-height: 1;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  transition: background 0.2s, border-color 0.2s, color 0.2s;
+  z-index: 2;
+  user-select: none;
+}
+
+.viewer-nav-btn:hover {
+  background: var(--green-bright);
+  border-color: var(--green-bright);
+  color: #fff;
+}
+
+.viewer-nav-btn:focus-visible {
+  outline: 2px solid var(--green-bright);
+  outline-offset: 2px;
+  background: rgba(11, 17, 32, 0.9);
+}
+
+.viewer-nav-btn--prev {
+  left: 16px;
+  padding-right: 4px;
+}
+
+.viewer-nav-btn--next {
+  right: 16px;
+  padding-left: 4px;
+}
+
+/* ── Meta & Info ── */
+.image-viewer-meta {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 16px;
+}
+
+.image-description {
+  font-size: 15px;
+  color: var(--text);
+  font-weight: 400;
+  line-height: 1.5;
+  margin: 0;
+}
+
+.image-counter {
+  font-size: 14px;
+  color: var(--muted);
+  font-weight: 500;
+  white-space: nowrap;
+}
+
+.image-viewer-placeholder {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  max-height: 520px;
+  min-height: 160px;
+  background: #050810;
+  color: var(--muted);
+  border: 1px dashed rgba(232, 240, 232, 0.15);
+  font-size: 14px;
+}
+
+/* ── Responsive ── */
+@media (max-width: 768px) {
+  .viewer-nav-btn {
+    width: 44px;
+    height: 44px;
+    font-size: 26px;
+  }
+  .viewer-nav-btn--prev { left: 8px; }
+  .viewer-nav-btn--next { right: 8px; }
+  .image-description { font-size: 14px; }
+}
+
+@media (max-width: 480px) {
+  .image-viewer-display {
+    max-height: 182px;
+  }
+}
